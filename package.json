@@ -1,0 +1,25 @@
+{
+  "name": "impfdashboard-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "sh  ./run.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willi84/impfdashboard-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willi84/impfdashboard-json/issues"
+  },
+  "homepage": "https://github.com/willi84/impfdashboard-json#readme",
+  "dependencies": {
+    "tsv-json-cli": "^2.0.0"
+  }
+}
