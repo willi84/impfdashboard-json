@@ -1,5 +1,7 @@
 name: My action Demos
 on:
+  schedule:
+    - cron: "0 1-23 * * *"
   push:
     branches:
       - main
