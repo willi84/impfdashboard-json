@@ -7,6 +7,7 @@ const data = fs.readFileSync('./tmp/data.tsv.json',
 const input = JSON.parse(data)
 let outputJSON = {};
 const len = input.length;
+outputJSON['json_updated'] = "LastSync: " + new Date().today() + " @ " + new Date().timeNow();
 input[0].forEach((key, index) => {
     outputJSON[key] = input[len-1][index];
 });
