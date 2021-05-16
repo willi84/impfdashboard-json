@@ -7,4 +7,5 @@ curl https://impfdashboard.de -o tmp/index.html
 node ./getfile.js
 ./node_modules/.bin/tsv2json tmp/data.tsv
 node ./analyze.js
+cp index.html ./build/index.html
 cp tmp/current.json ./build/current.json
