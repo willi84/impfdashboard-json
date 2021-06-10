@@ -25,6 +25,7 @@ outputJSON['title_widget'] = "📅 Impfdashboard";
 outputJSON['title_date'] = outputJSON['date'];
 //outputJSON['title_erst'] = "   💉 Erst: " + parseInt(outputJSON['impf_quote_erst']*100, 10).toFixed(2) + '%';
 outputJSON['title_erst'] = "   💉 Erst: " + round(parseInt(outputJSON['impf_quote_erst']*100, 10),2) + '%';
-outputJSON['title_voll'] = "💉💉 Voll: " + round(parseInt(outputJSON['impf_quote_voll']*100, 10),2) + '%';
+//outputJSON['title_voll'] = "💉💉 Voll: " + round(parseInt(outputJSON['impf_quote_voll']*100, 10),2) + '%';
+outputJSON['title_voll'] = "💉💉 Voll: " + round(parseFloat(outputJSON['impf_quote_voll'])*100,2) + '%';
 outputJSON['title_change'] = "⬆️ +" + new Intl.NumberFormat('de-DE', { style: 'decimal'}).format(outputJSON['dosen_differenz_zum_vortag']);
 fs.writeFileSync("./tmp/current.json", JSON.stringify(outputJSON));
