@@ -16,6 +16,12 @@ jobs:
         run: |
           npm install
           npm run build
+          ls -al
+#       - name: Archive PSI report results
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: dashboard-report
+#           path: dist/current.json
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3
