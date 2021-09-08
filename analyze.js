@@ -29,4 +29,4 @@ outputJSON['title_erst'] = "   💉 Erst: " + round(outputJSON['impf_quote_erst'
 outputJSON['title_voll'] = "💉💉 Voll: " + round(outputJSON['impf_quote_voll']*100,2) + '%';
 outputJSON['title_change'] = "⬆️ +" + new Intl.NumberFormat('de-DE', { style: 'decimal'}).format(outputJSON['dosen_differenz_zum_vortag']);
 fs.writeFileSync("./tmp/current.json", JSON.stringify(outputJSON));
-fs.writeFileSync("./tmp/current.html", '<table><tr><td>some content/td></tr></table>');
+fs.writeFileSync("./tmp/current.html", '<table><tr><td>some content</td></tr></table>');
