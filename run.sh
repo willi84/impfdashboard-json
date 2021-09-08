@@ -9,3 +9,4 @@ node ./getfile.js
 node ./analyze.js
 cp index.html ./build/index.html
 cp tmp/current.json ./build/current.json
+cp tmp/current.html ./build/current.html
